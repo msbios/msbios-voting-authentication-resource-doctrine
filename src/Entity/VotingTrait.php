@@ -7,7 +7,7 @@
 namespace MSBios\Voting\Authentication\Resource\Doctrine\Entity;
 
 use MSBios\Guard\Resource\UserInterface;
-use MSBios\Voting\Doctrine\Resolver\VoteInterface;
+use MSBios\Voting\Resource\Doctrine\Entity\VoteInterface;
 
 /**
  * Trait VotingTrait
