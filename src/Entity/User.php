@@ -30,6 +30,7 @@ class User extends Entity implements
 {
     use TimestampableAwareTrait;
     use RowStatusableAwareTrait;
+    use VotingTrait;
 
     /**
      * @var UserInterface

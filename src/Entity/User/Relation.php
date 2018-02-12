@@ -31,6 +31,7 @@ class Relation extends Entity implements
 {
     use TimestampableAwareTrait;
     use RowStatusableAwareTrait;
+    use Entity\VotingTrait;
 
     /**
      * @var VoteInterface
@@ -47,39 +48,4 @@ class Relation extends Entity implements
      * @ORM\JoinColumn(name="userid", referencedColumnName="id")
      */
     private $user;
-
-    /**
-     * @return mixed
-     */
-    public function getVote()
-    {
-        return $this->vote;
-    }
-
-    /**
-     * @param VoteInterface $vote
-     * @return $this
-     */
-    public function setVote(VoteInterface $vote)
-    {
-        $this->vote = $vote;
-        return $this;
-    }
-
-    /**
-     * @return UserInterface
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param UserInterface $user
-     */
-    public function setUser(UserInterface $user)
-    {
-        $this->user = $user;
-        return $this;
-    }
 }
