@@ -28,7 +28,7 @@ class UserRepository extends EntityRepository implements IdentityRepositoryInter
         $qb = $this->createQueryBuilder('u');
 
         $qb
-            ->join(Vote::class, 'r', Join::WITH)
+            ->join(Vote::class, 'v', Join::WITH)
             ->where('u.user = :identity')
             ->andWhere('v.poll = :poll')
             ->setMaxResults(1)
