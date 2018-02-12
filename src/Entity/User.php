@@ -7,12 +7,13 @@
 namespace MSBios\Voting\Authentication\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use MSBios\Guard\Resource\Doctrine\UserInterface;
+use MSBios\Guard\Resource\UserInterface;
 use MSBios\Resource\Doctrine\RowStatusableAwareInterface;
 use MSBios\Resource\Doctrine\RowStatusableAwareTrait;
 use MSBios\Resource\Doctrine\TimestampableAwareInterface;
 use MSBios\Resource\Doctrine\TimestampableAwareTrait;
 use MSBios\Voting\Authentication\Resource\Doctrine\Entity;
+use MSBios\Voting\Resource\Record\VoteInterface;
 
 /**
  * Class User
@@ -33,7 +34,7 @@ class User extends Entity implements
     use VotingTrait;
 
     /**
-     * @var UserInterface
+     * @var VoteInterface
      *
      * @ORM\ManyToOne(targetEntity="MSBios\Voting\Resource\Doctrine\Entity\Vote")
      * @ORM\JoinColumn(name="voteid", referencedColumnName="id")

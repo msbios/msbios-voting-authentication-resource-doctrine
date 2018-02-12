@@ -3166,16 +3166,16 @@
         },
         {
             "name": "msbios/voting-doctrine",
-            "version": "v1.0.18",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-voting-doctrine.git",
-                "reference": "8ace0ea7062677c64bb926cc2a29ac77688616ff"
+                "reference": "65af2143152aa2746ece2ac1c6b6038c91fd39e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-voting-doctrine/zipball/8ace0ea7062677c64bb926cc2a29ac77688616ff",
-                "reference": "8ace0ea7062677c64bb926cc2a29ac77688616ff",
+                "url": "https://api.github.com/repos/msbios/msbios-voting-doctrine/zipball/65af2143152aa2746ece2ac1c6b6038c91fd39e8",
+                "reference": "65af2143152aa2746ece2ac1c6b6038c91fd39e8",
                 "shasum": ""
             },
             "require": {
@@ -3214,29 +3214,27 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-02-09T10:49:06+00:00"
+            "time": "2018-02-12T13:43:28+00:00"
         },
         {
             "name": "msbios/voting-resource",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-voting-resource.git",
-                "reference": "4bdb91ada79b10ebc7e7b8be0016058bc81c2d89"
+                "reference": "177c26157d51f24b1761dae75acd8561c410349d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-voting-resource/zipball/4bdb91ada79b10ebc7e7b8be0016058bc81c2d89",
-                "reference": "4bdb91ada79b10ebc7e7b8be0016058bc81c2d89",
+                "url": "https://api.github.com/repos/msbios/msbios-voting-resource/zipball/177c26157d51f24b1761dae75acd8561c410349d",
+                "reference": "177c26157d51f24b1761dae75acd8561c410349d",
                 "shasum": ""
             },
             "require": {
-                "msbios/form": "~1.0"
+                "msbios/form": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "squizlabs/php_codesniffer": "^3.0",
-                "zendframework/zend-test": "^3.1"
+                "msbios/test": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -3251,7 +3249,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -3264,20 +3262,20 @@
             "keywords": [
                 "php"
             ],
-            "time": "2017-10-30T09:37:54+00:00"
+            "time": "2018-02-12T13:09:13+00:00"
         },
         {
             "name": "msbios/voting-resource-doctrine",
-            "version": "v1.0.52",
+            "version": "v1.0.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-voting-resource-doctrine.git",
-                "reference": "ac4077fd920b2521e7623f6b352bcfd6f352bc39"
+                "reference": "4aeff60718ec8e53fcc2b98d61e3e259387f2aa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-voting-resource-doctrine/zipball/ac4077fd920b2521e7623f6b352bcfd6f352bc39",
-                "reference": "ac4077fd920b2521e7623f6b352bcfd6f352bc39",
+                "url": "https://api.github.com/repos/msbios/msbios-voting-resource-doctrine/zipball/4aeff60718ec8e53fcc2b98d61e3e259387f2aa4",
+                "reference": "4aeff60718ec8e53fcc2b98d61e3e259387f2aa4",
                 "shasum": ""
             },
             "require": {
@@ -3318,7 +3316,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-02-07T15:19:50+00:00"
+            "time": "2018-02-12T13:19:07+00:00"
         },
         {
             "name": "msbios/widget",
@@ -3674,16 +3672,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf"
+                "reference": "9f901e29c93dae4aa77c0bb161df4276f9c9a1be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf",
-                "reference": "e4ed002c67da8eceb0eb8ddb8b3847bb53c5c2bf",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/9f901e29c93dae4aa77c0bb161df4276f9c9a1be",
+                "reference": "9f901e29c93dae4aa77c0bb161df4276f9c9a1be",
                 "shasum": ""
             },
             "require": {
@@ -3695,7 +3693,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^2.5|^3.2",
-                "phpunit/phpunit": "^4.8.35 || ^5.7"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
             },
             "type": "library",
             "extra": {
@@ -3733,7 +3731,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2017-11-24T13:59:53+00:00"
+            "time": "2018-02-11T18:49:29+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
