@@ -6,7 +6,7 @@
 namespace MSBios\Voting\Authentication\Resource\Doctrine\Repository;
 
 use MSBios\Authentication\IdentityInterface;
-use MSBios\Voting\Resource\Doctrine\Entity\PollInterface;
+use MSBios\Voting\Resource\Record\PollInterface;
 
 /**
  * Interface IdentityRepositoryInterface

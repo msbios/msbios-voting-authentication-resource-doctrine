@@ -9,8 +9,8 @@ use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\Expr\Join;
 use Doctrine\ORM\QueryBuilder;
 use MSBios\Authentication\IdentityInterface;
-use MSBios\Voting\Resource\Doctrine\Entity\PollInterface;
 use MSBios\Voting\Resource\Doctrine\Entity\Vote\Relation;
+use MSBios\Voting\Resource\Record\PollInterface;
 
 /**
  * Class RelationRepository
