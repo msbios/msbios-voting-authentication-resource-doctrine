@@ -18,7 +18,7 @@ use MSBios\Voting\Authentication\Resource\Doctrine\Entity;
  * Class User
  * @package MSBios\Voting\Authentication\Resource\Doctrine\Entity
  *
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="MSBios\Voting\Authentication\Resource\Doctrine\Repository\UserRepository")
  * @ORM\Table(name="vot_t_users",
  *     indexes={
  *          @ORM\Index(name="rowstatus", columns={"rowstatus"})}

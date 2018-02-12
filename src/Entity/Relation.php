@@ -4,7 +4,7 @@
  * @author Judzhin Miles <judzhin[at]gns-it.com>
  */
 
-namespace MSBios\Voting\Authentication\Resource\Doctrine\Entity\User;
+namespace MSBios\Voting\Authentication\Resource\Doctrine\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use MSBios\Guard\Resource\Doctrine\UserInterface;
@@ -16,10 +16,10 @@ use MSBios\Voting\Authentication\Resource\Doctrine\Entity;
 use MSBios\Voting\Resource\Doctrine\Entity\VoteInterface;
 
 /**
- * Class Vote
- * @package OpenPower\Resource\Entity
+ * Class Relation
+ * @package MSBios\Voting\Authentication\Resource\Doctrine\Entity
  *
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="MSBios\Voting\Authentication\Resource\Doctrine\Repository\RelationRepository")
  * @ORM\Table(name="vot_t_user_relations",
  *     indexes={
  *          @ORM\Index(name="rowstatus", columns={"rowstatus"})}
@@ -31,7 +31,7 @@ class Relation extends Entity implements
 {
     use TimestampableAwareTrait;
     use RowStatusableAwareTrait;
-    use Entity\VotingTrait;
+    use VotingTrait;
 
     /**
      * @var VoteInterface
