@@ -5,10 +5,9 @@
  */
 namespace MSBios\Voting\Authentication\Resource\Doctrine\Repository;
 
-use Doctrine\ORM\EntityRepository;
 use Doctrine\ORM\Query\Expr\Join;
-use Doctrine\ORM\QueryBuilder;
 use MSBios\Authentication\IdentityInterface;
+use MSBios\Resource\Doctrine\EntityRepository;
 use MSBios\Voting\Resource\Doctrine\Entity\Vote;
 use MSBios\Voting\Resource\Record\PollInterface;
 
@@ -18,6 +17,9 @@ use MSBios\Voting\Resource\Record\PollInterface;
  */
 class UserRepository extends EntityRepository implements IdentityRepositoryInterface
 {
+    /** @const DEFAULT_ALIAS */
+    const DEFAULT_ALIAS = 'u';
+
     /**
      * @param PollInterface $poll
      * @param IdentityInterface $identity
@@ -25,18 +27,15 @@ class UserRepository extends EntityRepository implements IdentityRepositoryInter
      */
     public function findByPollAndIdentity(PollInterface $poll, IdentityInterface $identity)
     {
-        /** @var QueryBuilder $qb */
-        $qb = $this->createQueryBuilder('u');
-
-        $qb
+        return $this
+            ->createQueryBuilder(self::DEFAULT_ALIAS)
             ->join(Vote::class, 'v', Join::WITH)
             ->where('u.user = :identity')
             ->andWhere('v.poll = :poll')
             ->setMaxResults(1)
             ->setParameter('identity', $identity)
             ->setParameter('poll', $poll)
-        ;
-
-        return $qb->getQuery()->getOneOrNullResult();
+            ->getQuery()
+            ->getOneOrNullResult();
     }
 }

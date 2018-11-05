@@ -10,7 +10,7 @@ use MSBios\Guard\Resource\UserInterface;
 use MSBios\Voting\Resource\Record\VoteInterface;
 
 /**
- * Trait VotingTrait
+ * Class VotingTrait
  * @package MSBios\Voting\Authentication\Resource\Doctrine\Entity
  */
 trait VotingTrait

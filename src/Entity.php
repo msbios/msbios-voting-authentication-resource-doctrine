@@ -14,5 +14,5 @@ use MSBios\Resource\Doctrine\Entity as DefaultEntity;
  */
 class Entity extends DefaultEntity
 {
-
+    // ...
 }

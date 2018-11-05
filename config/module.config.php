@@ -7,12 +7,14 @@
 
 namespace MSBios\Voting\Authentication\Resource\Doctrine;
 
+use Doctrine\ORM\Mapping\Driver\AnnotationDriver;
+
 return [
     'doctrine' => [
         'driver' => [
             // defines an annotation driver with two paths, and names it `my_annotation_driver`
             Module::class => [
-                'class' => \Doctrine\ORM\Mapping\Driver\AnnotationDriver::class,
+                'class' => AnnotationDriver::class,
                 'cache' => 'array',
                 'paths' => [
                     __DIR__ . '/../src/Entity'
@@ -20,7 +22,7 @@ return [
             ],
 
             'translatable_metadata_driver' => [
-                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'class' => AnnotationDriver::class,
                 'cache' => 'array',
                 'paths' => [
                 ]
