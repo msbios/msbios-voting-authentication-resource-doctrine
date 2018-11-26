@@ -31,12 +31,12 @@ class User extends Entity implements
 {
     use TimestampableAwareTrait;
     use RowStatusableAwareTrait;
-    use VotingTrait;
+    use VotingableAwareTrait;
 
     /**
      * @var VoteInterface
      *
-     * @ORM\ManyToOne(targetEntity="MSBios\Voting\Resource\Doctrine\Entity\Vote")
+     * @ORM\ManyToOne(targetEntity="MSBios\Voting\Resource\Record\VoteInterface")
      * @ORM\JoinColumn(name="voteid", referencedColumnName="id")
      */
     private $vote;
@@ -49,39 +49,39 @@ class User extends Entity implements
      */
     private $user;
 
-    /**
-     * @return VoteInterface
-     */
-    public function getVote()
-    {
-        return $this->vote;
-    }
-
-    /**
-     * @param VoteInterface $vote
-     * @return $this
-     */
-    public function setVote(VoteInterface $vote)
-    {
-        $this->vote = $vote;
-        return $this;
-    }
-
-    /**
-     * @return UserInterface
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param UserInterface $user
-     * @return $this
-     */
-    public function setUser(UserInterface $user)
-    {
-        $this->user = $user;
-        return $this;
-    }
+    ///**
+    // * @return VoteInterface
+    // */
+    //public function getVote()
+    //{
+    //    return $this->vote;
+    //}
+    //
+    ///**
+    // * @param VoteInterface $vote
+    // * @return $this
+    // */
+    //public function setVote(VoteInterface $vote)
+    //{
+    //    $this->vote = $vote;
+    //    return $this;
+    //}
+    //
+    ///**
+    // * @return UserInterface
+    // */
+    //public function getUser()
+    //{
+    //    return $this->user;
+    //}
+    //
+    ///**
+    // * @param UserInterface $user
+    // * @return $this
+    // */
+    //public function setUser(UserInterface $user)
+    //{
+    //    $this->user = $user;
+    //    return $this;
+    //}
 }

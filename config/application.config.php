@@ -6,14 +6,7 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
-        'MSBios\Voting\I18n\Resource\Doctrine',
-        'MSBios\I18n\Doctrine',
-        'MSBios\Cache',
         'Zend\Serializer',
-        'MSBios\Hydrator',
-        'MSBios\Guard\Doctrine',
-        'MSBios\Paginator\Doctrine',
-        'MSBios\Validator',
         'Zend\Mvc\Console',
         'Zend\Db',
         'Zend\I18n',
@@ -31,9 +24,17 @@ return [
         'Zend\Session',
         'Zend\Router',
         'Zend\Validator',
+
         'DoctrineModule',
         'DoctrineORMModule',
-        'DoctrineDataFixtureModule',
+
+        'MSBios\Voting\I18n\Resource\Doctrine',
+        'MSBios\I18n\Doctrine',
+        'MSBios\Cache',
+        'MSBios\Hydrator',
+        'MSBios\Guard\Doctrine',
+        'MSBios\Paginator\Doctrine',
+        'MSBios\Validator',
         'MSBios\Portal\Doctrine',
         'MSBios\Db',
         'MSBios\Test',

@@ -10,10 +10,10 @@ use MSBios\Guard\Resource\UserInterface;
 use MSBios\Voting\Resource\Record\VoteInterface;
 
 /**
- * Class VotingTrait
+ * Trait VotingableAwareTrait
  * @package MSBios\Voting\Authentication\Resource\Doctrine\Entity
  */
-trait VotingTrait
+trait VotingableAwareTrait
 {
     /**
      * @var VoteInterface
