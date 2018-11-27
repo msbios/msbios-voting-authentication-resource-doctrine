@@ -3449,16 +3449,16 @@
         },
         {
             "name": "msbios/voting",
-            "version": "v1.0.37",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-voting.git",
-                "reference": "928d51b27075841278e9768f844a834f939171aa"
+                "reference": "a0cc103dfd8f8ff4c0125e7519dda34ea4cbca53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-voting/zipball/928d51b27075841278e9768f844a834f939171aa",
-                "reference": "928d51b27075841278e9768f844a834f939171aa",
+                "url": "https://api.github.com/repos/msbios/msbios-voting/zipball/a0cc103dfd8f8ff4c0125e7519dda34ea4cbca53",
+                "reference": "a0cc103dfd8f8ff4c0125e7519dda34ea4cbca53",
                 "shasum": ""
             },
             "require": {
@@ -3496,7 +3496,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-02-08T11:21:52+00:00"
+            "time": "2018-11-27T09:31:41+00:00"
         },
         {
             "name": "msbios/voting-authentication-doctrine",
@@ -3550,16 +3550,16 @@
         },
         {
             "name": "msbios/voting-doctrine",
-            "version": "v1.0.34",
+            "version": "v1.0.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msbios/msbios-voting-doctrine.git",
-                "reference": "59de51de0c4cc2e3b638e435c1f9be278266b505"
+                "reference": "3a253179d28f9a095965ef40e4871ce2c1ef09da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msbios/msbios-voting-doctrine/zipball/59de51de0c4cc2e3b638e435c1f9be278266b505",
-                "reference": "59de51de0c4cc2e3b638e435c1f9be278266b505",
+                "url": "https://api.github.com/repos/msbios/msbios-voting-doctrine/zipball/3a253179d28f9a095965ef40e4871ce2c1ef09da",
+                "reference": "3a253179d28f9a095965ef40e4871ce2c1ef09da",
                 "shasum": ""
             },
             "require": {
@@ -3598,7 +3598,7 @@
             "keywords": [
                 "php"
             ],
-            "time": "2018-11-26T21:41:20+00:00"
+            "time": "2018-11-27T12:49:21+00:00"
         },
         {
             "name": "msbios/voting-i18n-resource-doctrine",

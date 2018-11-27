@@ -19,7 +19,7 @@ use MSBios\Voting\Resource\Record\VoteInterface;
  * Class UserRelation
  * @package MSBios\Voting\Authentication\Resource\Doctrine\Entity
  *
- * @ORM\Entity(repositoryClass="MSBios\Voting\Authentication\Resource\Doctrine\Repository\RelationRepository")
+ * @ORM\Entity(repositoryClass="MSBios\Voting\Authentication\Resource\Doctrine\Repository\UserRelationRepository")
  * @ORM\Table(name="vot_t_user_relations",
  *     indexes={
  *          @ORM\Index(name="rowstatus", columns={"rowstatus"})}
