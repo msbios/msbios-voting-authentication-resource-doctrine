@@ -24,12 +24,13 @@ class UserRelationRepository extends EntityRepository implements IdentityReposit
      * @param PollInterface $poll
      * @param IdentityInterface $identity
      * @return mixed
+     * @throws \Doctrine\ORM\NonUniqueResultException
      */
-    public function findByPollAndIdentity(PollInterface $poll, IdentityInterface $identity)
+    public function findOneByPollAndIdentity(PollInterface $poll, IdentityInterface $identity)
     {
         return $this
             ->createQueryBuilder(self::DEFAULT_ALIAS)
-            ->join(VoteRelation::class, 'vr', Join::WITH)
+            ->join(VoteRelation::class, 'vr', Join::WITH, 'ur.vote = vr.id')
             ->where('ur.user = :identity')
             ->andWhere('vr.poll = :poll')
             ->setMaxResults(1)

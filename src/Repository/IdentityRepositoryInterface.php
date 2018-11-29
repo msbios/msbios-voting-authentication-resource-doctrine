@@ -19,5 +19,5 @@ interface IdentityRepositoryInterface
      * @param IdentityInterface $identity
      * @return mixed
      */
-    public function findByPollAndIdentity(PollInterface $poll, IdentityInterface $identity);
+    public function findOneByPollAndIdentity(PollInterface $poll, IdentityInterface $identity);
 }
