@@ -6,6 +6,7 @@
 return [
     // Retrieve list of modules used in this application.
     'modules' => [
+        'Zend\Log',
         'Zend\Serializer',
         'Zend\Mvc\Console',
         'Zend\Db',
