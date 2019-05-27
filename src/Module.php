@@ -5,18 +5,11 @@
  */
 namespace MSBios\Voting\Authentication\Resource\Doctrine;
 
-use MSBios\ModuleInterface;
-use Zend\Loader\AutoloaderFactory;
-use Zend\Loader\StandardAutoloader;
-use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
-
 /**
  * Class Module
  * @package MSBios\Voting\Authentication\Resource\Doctrine
  */
-class Module implements
-    ModuleInterface,
-    AutoloaderProviderInterface
+class Module extends \MSBios\Module
 {
     /** @const VERSION */
     const VERSION = '1.0.13';
@@ -24,26 +17,20 @@ class Module implements
     /**
      * @inheritdoc
      *
-     * @return array|mixed|\Traversable
+     * @return string
      */
-    public function getConfig()
+    protected function getDir()
     {
-        return include __DIR__ . '/../config/module.config.php';
+        return __DIR__;
     }
 
     /**
      * @inheritdoc
      *
-     * @return array
+     * @return string
      */
-    public function getAutoloaderConfig()
+    protected function getNamespace()
     {
-        return [
-            AutoloaderFactory::STANDARD_AUTOLOADER => [
-                StandardAutoloader::LOAD_NS => [
-                    __NAMESPACE__ => __DIR__,
-                ],
-            ],
-        ];
+        return __NAMESPACE__;
     }
 }
